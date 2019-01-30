@@ -5,8 +5,7 @@ project("cosc1337")
 include_directories(inc)
 include_directories(01-basics)
 include_directories("classwork/02_assign")
-include_directories(examples/01_module)
-
+include_directories(examples/01_module/01_output)
 
 add_subdirectory(01-basics)
 add_subdirectory(01-basics_test)
