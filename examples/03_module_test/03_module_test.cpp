@@ -1,3 +1,8 @@
-add_executable(01_module_tests "01_module_test.cpp")
-target_link_libraries(sample_auto_library sample_while_library sample_for_library sample_do_while_library 
-                      sample_for_ranged_library sample_value_ref_library sample_vectors_library)
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#include "catch.hpp"
+#include "sample_while.h"
+
+TEST_CASE("Test function sum_of_squares with preincrement ++i") 
+{
+	REQUIRE(sum_of_squares(4) == 30);
+}
