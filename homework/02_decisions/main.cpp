@@ -2,22 +2,28 @@
 //write include statements
 
 /*
-In main write code to capture the following data from the keyboard:
+In main write code to capture a letter_grade and credit_hours from the keyboard:
 
-Grade	Credit Hours
-A		   4
-B          3
-C          2
 
-After each user input convert the Grade to credit_points by calling the get_credit_points function, and
+Grade   Credit Hours	grade_points   credit_points
+A          3            4              12
+B          3            3               9
+C          3            2               6
+-----------------------------------------------
+           9                           27
+After each user input convert the Grade to grade points by calling the get_grade_points function, and
 keep a running total for both credit_points and credit_hours.
 
-The GPA should calculate to 3.22, make sure to display it before program exits.
+Call the calculate_gpa function with its arguments.
+The GPA should calculate to 3.0, make sure to display it before program exits.
+
+Display:
+GPA 3.0
 
 */
 int main() 
 {
-	std::cout << "hello";
-	
+	std::cout << "Hello" ;
+
 	return 0;
 }
