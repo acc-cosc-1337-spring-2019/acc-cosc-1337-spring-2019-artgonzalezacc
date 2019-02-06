@@ -1,5 +1,5 @@
-#include "if.h"
 #include<iostream>
+#include "if.h"//to use is_even function here
 
 using std::cout;
 using std::cin;
@@ -19,15 +19,15 @@ int main()
 	//call the is_even function with value as its argument
 	//and assign its return value to the even variable
 	even = is_even(value);
-
 	//display whether the number is even or not
+
 	if (even == true) 
 	{
-		cout << value << " is even";
+		cout << value << " is Even";
 	}
 	else 
 	{
-		cout << value << " is odd";
+		cout << value << " is not even";
 	}
 
 	return 0;
