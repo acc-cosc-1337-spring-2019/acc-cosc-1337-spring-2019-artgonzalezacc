@@ -6,3 +6,12 @@ TEST_CASE("Test function sum_of_squares with preincrement ++i")
 {
 	REQUIRE(sum_of_squares(4) == 30);
 }
+
+
+/*
+Create test case for count_letters_in_string with values:
+string     char          result
+"james"     e              1
+"larry"     r              2
+"sammy m"   m              3 
+*/
