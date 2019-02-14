@@ -1,0 +1,2 @@
+add_executable(assign4_tests "sequence_tests.cpp")
+target_link_libraries(assign4_tests 04_assign_library)

@@ -23,6 +23,6 @@ script:
   - mkdir build
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
-  - ./homework/02_decisions_test/02_decisions_tests -s
-  - ./classwork/03_assign_tests/assign3_tests -s  
+  - ./classwork/03_assign_tests/assign3_tests -s
+  - ./classwork/04_assign_tests/assign4_tests -s
   - ./homework/03_iteration_test/03_iteration_tests -s
