@@ -4,4 +4,15 @@ has one public function area that returns the area of the rectangle, and one pri
 that calculates area of the rectangle.  The class has 3 int private variables area, width, and height.
 */
 
-int return_val();
+namespace acc {
+	class Rectangle
+	{
+	public:
+		Rectangle(int h, int w);
+		int get_area()const;
+	private:
+		int area, height, width;
+		void calculate_area();
+
+	};
+}

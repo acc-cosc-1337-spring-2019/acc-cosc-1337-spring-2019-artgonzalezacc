@@ -5,7 +5,18 @@ has one public function area that returns the area of the rectangle, and one pri
 that calculates area of the rectangle.  The class has 3 int private variables area, width, and height.
 */
 
-int return_val() 
+acc::Rectangle::Rectangle(int h, int w) : height(h), width(w) 
 {
-	return 1;
+	calculate_area();
 }
+
+int acc::Rectangle::get_area() const
+{
+	return area;
+}
+
+void acc::Rectangle::calculate_area()
+{
+	area = width * height;
+}
+
