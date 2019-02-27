@@ -12,7 +12,7 @@ std::string TicTacToe::get_player() const
 
 bool TicTacToe::game_over()
 {
-	if(check_column_win() || check_row_win() || check_diag_win())
+	if(check_column_win())
 	{
 		return true;
 	}
