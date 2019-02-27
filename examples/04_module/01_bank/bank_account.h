@@ -4,8 +4,7 @@
 class BankAccount
 {
 public:
-	BankAccount();//Overloading constructors
-	BankAccount(int act, double bal);//overloading constructor
+	BankAccount(int act, double bal);
 	double get_balance() const;
 	void deposit(double amount);
 	void withdraw(double amount);
