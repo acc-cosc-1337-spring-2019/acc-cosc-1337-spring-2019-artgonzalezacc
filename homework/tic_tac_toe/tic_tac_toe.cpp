@@ -1,4 +1,5 @@
 #include "tic_tac_toe.h"
+#include<iostream>
 
 void TicTacToe::start_game(std::string first_player)
 {
@@ -120,4 +121,12 @@ bool TicTacToe::check_board_full()
 	}
 
 	return true;
+}
+
+void TicTacToe::display_board() const 
+{
+	for (std::size_t i = 0; i < 9; i += 3)
+	{
+		std::cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2] << "\n";
+	}
 }
