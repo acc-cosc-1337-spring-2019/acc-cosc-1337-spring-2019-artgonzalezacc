@@ -166,3 +166,29 @@ TEST_CASE("Test win diagonal 2", "[X wins with 3 5 7]")
 	//X wins 
 	REQUIRE(board.game_over() == true);
 }
+
+TEST_CASE("Test tie", "[X wins with 3 5 7]")
+{
+	TicTacToe board;
+	board.start_game("X");
+	REQUIRE(board.game_over() == false);
+	board.mark_board(1);//X         
+	REQUIRE(board.game_over() == false);
+	board.mark_board(2);//O          
+	REQUIRE(board.game_over() == false);
+	board.mark_board(3);//X          
+	REQUIRE(board.game_over() == false);
+	board.mark_board(5);//O          
+	REQUIRE(board.game_over() == false);
+	board.mark_board(4);//X 
+	REQUIRE(board.game_over() == false);
+	board.mark_board(6);//O          
+	REQUIRE(board.game_over() == false);
+	board.mark_board(8);//X 
+	REQUIRE(board.game_over() == false);
+	board.mark_board(7);//O          
+	REQUIRE(board.game_over() == false);
+	board.mark_board(9);//X
+	//X wins 
+	REQUIRE(board.game_over() == true);
+}

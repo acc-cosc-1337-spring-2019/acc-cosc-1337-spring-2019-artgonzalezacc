@@ -3,6 +3,7 @@
 void TicTacToe::start_game(std::string first_player)
 {
 	next_player = first_player;
+	clear_board();
 }
 
 std::string TicTacToe::get_player() const
@@ -12,7 +13,7 @@ std::string TicTacToe::get_player() const
 
 bool TicTacToe::game_over()
 {
-	if(check_column_win() || check_row_win() || check_diagonal_win())
+	if(check_column_win() || check_row_win() || check_diagonal_win() || check_board_full())
 	{
 		return true;
 	}
