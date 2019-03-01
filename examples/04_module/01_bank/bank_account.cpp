@@ -17,6 +17,11 @@ void BankAccount::deposit(double amount)
 	}
 }
 
+void BankAccount::deposit(int pin, double amount) 
+{
+
+}
+
 void BankAccount::withdraw(double amount)
 {
 	if (amount > 0 && balance >= amount)
