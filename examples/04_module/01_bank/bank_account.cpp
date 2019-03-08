@@ -7,6 +7,9 @@ BankAccount::BankAccount(int act, double bal) :
 }
 double BankAccount::get_balance() const
 {
+	
+	//Transaction t("inquiry", 0, balance);
+	//transactions.push_back();
 	return balance;
 }
 
