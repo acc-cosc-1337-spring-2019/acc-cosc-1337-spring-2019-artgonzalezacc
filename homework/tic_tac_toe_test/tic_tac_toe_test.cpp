@@ -165,6 +165,7 @@ TEST_CASE("Test win diagonal 2", "[X wins with 3 5 7]")
 	board.mark_board(7);//X 
 	//X wins 
 	REQUIRE(board.game_over() == true);
+	REQUIRE(board.get_winner() == "X");
 }
 
 TEST_CASE("Test tie", "[X wins with 3 5 7]")
@@ -191,4 +192,5 @@ TEST_CASE("Test tie", "[X wins with 3 5 7]")
 	board.mark_board(9);//X
 	//X wins 
 	REQUIRE(board.game_over() == true);
+	REQUIRE(board.get_winner() == "C");
 }
