@@ -5,7 +5,8 @@
 
 class Transaction
 {
-	Transaction(std::string t, double amt, double bal) :
+public:
+	Transaction(const std::string t, double amt, double bal) :
 		type(t), amount(amt), balance(bal) {}
 	friend std::ostream & operator << (std::ostream & out,
 		const Transaction &t);
