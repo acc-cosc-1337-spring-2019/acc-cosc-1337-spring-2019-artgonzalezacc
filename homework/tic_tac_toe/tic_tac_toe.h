@@ -21,5 +21,5 @@ private:
 	bool check_diagonal_win();
 	void clear_board();
 	bool check_board_full();
-	void set_winner(std::string player);
+	void set_winner();
 };
