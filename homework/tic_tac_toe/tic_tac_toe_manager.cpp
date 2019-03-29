@@ -32,7 +32,7 @@ std::ostream & operator<<(std::ostream & out, const TicTacToeManager & t)
 	}
 
 	out << "X wins: " << t.x_win << "\n";
-	out << "Y wins: " << t.x_win << "\n";
+	out << "O wins: " << t.o_win << "\n";
 	out << "Ties: " << t.ties << "\n";
 
 	return out;
