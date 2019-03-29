@@ -8,7 +8,8 @@ class TicTacToeManager
 {
 public:
 	void save_game(const TicTacToe game);
-	void display_history()const;
+	friend std::ostream & operator << (std::ostream & out,
+		const TicTacToeManager & t);
 private:
 	std::vector<TicTacToe> games;
 	void update_winner_count(std::string winner);
