@@ -15,7 +15,7 @@ double BankAccount::get_balance()
 
 void BankAccount::deposit(double amount)
 {
-	if (amount > amount_greater_zero(amount))
+	if (amount_greater_zero(amount))
 	{
 		balance += amount;
 
