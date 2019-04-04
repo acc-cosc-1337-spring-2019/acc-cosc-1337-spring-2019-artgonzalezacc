@@ -8,10 +8,11 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("Test first player X") 
 {
-	TicTacToe tic_tac_toe;
-	tic_tac_toe.start_game("X");
+	TicTacToe* tic_tac_toe;
+	tic_tac_toe = new TicTacToe3();
+	tic_tac_toe->start_game("X");
 
-	REQUIRE(tic_tac_toe.get_player() == "X");
+	REQUIRE(tic_tac_toe->get_player() == "X");
 
 }
 

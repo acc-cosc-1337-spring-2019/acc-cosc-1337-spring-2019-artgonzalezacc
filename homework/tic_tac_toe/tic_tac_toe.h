@@ -14,7 +14,6 @@ enum GameType
 class TicTacToe 
 {
 public:
-	TicTacToe() : pegs(9, " ") {}
 	TicTacToe(GameType game_type) : pegs(game_type * game_type, " ") {}
 	void start_game(std::string first_player);
 	std::string get_player() const;
