@@ -2,8 +2,21 @@
 #include "tic_tac_toe_3.h"
 #include "tic_tac_toe_4.h"
 
-//Write class function implementations here
 
+/*
+1. Write code to set the class variable games to the return value of data (class
+variable) get_games function.
+Call the set_scores function.
+*/
+TicTacToeManager::TicTacToeManager()
+{
+	
+}
+
+/*
+2. After update_winner_count call data save_game function and pass the
+game get_pegs return value to the function.
+*/
 void TicTacToeManager::save_game(std::unique_ptr<TicTacToe>& game)
 {   
 	update_winner_count(game->get_winner());
@@ -42,6 +55,16 @@ void TicTacToeManager::update_winner_count(std::string winner)
 	{
 		o_win++;
 	}
+}
+
+/*
+3. Write code to set values of x_win, o_win and ties.
+Iterate vector of games call get_winner function for each game
+and add 1 to x_win, o_win or ties.
+*/
+void TicTacToeManager::set_scores()
+{
+	
 }
 
 void TicTacToeManager::get_winner_totals(int& x, int& o, int& c) 
